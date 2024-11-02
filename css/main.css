@@ -1,0 +1,119 @@
+@import url(./reset.css);
+
+/* Définition des variables de couleur et de thème */
+:root {
+    --clr-primary: #003366;
+    --clr-secondary: #990000;
+    --clr-background: #f4f4f4;
+    --clr-card-background: #ffffff;
+    --clr-card-highlight: #e6f2ff;
+    --clr-card-highlight-alt: #ffebe6;
+    --clr-text: #333333;
+    --clr-footer-background: var(--clr-primary);
+    --clr-footer-text: #ffffff;
+
+    /* Base pour les espacements et les polices */
+    --space-lg : 1rem;
+    --font-lg: 2rem;
+    --font-title: 4rem;
+    --border-radius: 0.4rem;
+    --shadow-light: 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Reset avec rem */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* En-tête */
+header {
+    background-color: var(--clr-primary);
+    color: #fff;
+    text-align: center;
+    padding: var(--space-lg) 0;
+}
+
+header h1 {
+    font-size: var(--font-title);
+}
+header h1 img{
+    display: inline-block;
+    width: 5%;
+    vertical-align: middle;
+}
+
+header p {
+    font-size: var(--font-lg);
+    font-style: italic;
+}
+
+/* Sections */
+section {
+    padding: var(--space-lg);
+    margin: var(--space);
+    background-color: var(--clr-card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    max-width: 100rem;
+    margin: 5rem auto 0;
+}
+
+/* Candidats */
+.candidats {
+    background-color: var(--clr-card-highlight);
+}
+
+.candidats h2,
+.resultats h2,
+.nouvelles h2 {
+    color: var(--clr-primary);
+    margin-bottom: var(--space);
+    font-weight: 300;
+}
+
+.candidats h3 img{
+    display: inline-block;
+    width: 10%;
+    vertical-align: middle;
+}
+
+.candidat {
+   
+    padding-left: var(--space);
+    margin-bottom: var(--space);
+}
+
+.candidat h3 {
+    color: var(--clr-primary);
+}
+
+/* Résultats */
+.resultats {
+    background-color: var(--clr-card-highlight-alt);
+}
+
+/* Nouvelles */
+.nouvelles article {
+    margin-bottom: var(--space-lg);
+}
+
+.nouvelles h3 {
+    color: var(--clr-secondary);
+    font-size: var(--font-lg);
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: var(--space);
+    background-color: var(--clr-footer-background);
+    color: var(--clr-footer-text);
+    line-height: 4.5rem;
+    margin-top: var(--space-lg);
+}
